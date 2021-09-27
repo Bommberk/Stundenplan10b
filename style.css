@@ -48,26 +48,6 @@ body
     border-radius: 50px;
     transition: 0.5s ease-in-out;
 }
-@media (max-width: 1000px)
-{
-    .tabel
-    {
-        width: 650px;
-        height: 500px;
-    }
-    .le1
-    {
-        font-size: 4em;
-    }
-}
-@media (max-width: 650px)
-{
-    .tabel
-    {
-        width: 450px;
-        height: 400px;
-    }
-}
 .list
 {
   font-size: 2em;
