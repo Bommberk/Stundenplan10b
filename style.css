@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+*::selection
+{
+    color: #888;
+}
+body
+{
+    background-color: #123;
+}
+.überschrift
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 2.7em;
+    background: linear-gradient(to right,#2c2c2c,#888,aqua,#888,#2c2c2c);
+    border-bottom-left-radius: 50%;
+    text-align: center;
+    border-bottom-right-radius: 50%;
+}
+.überschrift::after
+{
+    content: 'Stundenplan klasse 9b cool';
+    position: absolute;
+    background: aqua;
+    box-shadow: 0 10px 100px aqua;
+    z-index: -2;
+    border-radius: 50%;
+}
+.tabel
+{
+    margin: auto;
+    width: 1000px;
+    height: 670px;
+    background-color: #7fff00;
+    margin-top: 100px;
+    box-shadow: 0 -15px 15px rgba(0,0, 0, 0.5),
+                inset 0 -15px 15px rgba(255,255,255, 0.3),
+                inset 0 15px 15px rgba(255,255,255, 0.5),
+                 0 15px 15px rgba(0,0, 0, 0.5);
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+@media (max-width: 1000px)
+{
+    .tabel
+    {
+        width: 650px;
+        height: 500px;
+    }
+    .le1
+    {
+        font-size: 4em;
+    }
+}
+@media (max-width: 650px)
+{
+    .tabel
+    {
+        width: 450px;
+        height: 400px;
+    }
+}
+.list
+{
+  font-size: 2em;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 20px;
+}
+.oben
+{
+    background-color: #0a801d;
+    border: none; 
+    height: 10px;
+}
+hr
+{
+    background-color: #214364;
+    border: none; 
+    height: 3px;
+}
+.le1
+{
+    font-size: 2em;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;   
+}
+.le2
+{
+    font-size: 2em;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 20px;   
+}
+.le3    
+{
+    font-size: 2em;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 20px;   
+}
+.le4
+{
+    font-size: 2em;
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px;   
+}
+.le5
+{
+    font-size: 2em;
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px;   
+}
+.le6
+{
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px;   
+}
+.le7
+{
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: 900;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;   
+    letter-spacing: 20px;
+}
+.striche
+{
+    text-decoration: line-through;
+}
