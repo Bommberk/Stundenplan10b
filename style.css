@@ -23,16 +23,18 @@ body
     background: linear-gradient(to right,#2c2c2c,#888,aqua,#888,#2c2c2c);
     border-bottom-left-radius: 50%;
     text-align: center;
+    width: 100%;
     border-bottom-right-radius: 50%;
 }
 .überschrift::after
 {
-    content: 'Stundenplan klasse 9b cool';
+    content: 'Stundenplan klasse 9b ist voll cool';
     position: absolute;
-    background: aqua;
     box-shadow: 0 10px 100px aqua;
     z-index: -2;
     border-radius: 50%;
+    top: 0;
+    left: 25%;
 }
 .tabel
 {
