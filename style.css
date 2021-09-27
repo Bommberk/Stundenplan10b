@@ -128,3 +128,7 @@ hr
     justify-content: space-between;
     padding: 20px;   
 }
+.striche
+{
+    text-decoration: line-through;
+}
