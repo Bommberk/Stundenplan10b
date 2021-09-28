@@ -164,3 +164,8 @@ footer
     margin-top: 20px;
     color: #b9b9b9;
 }
+footer::after
+{
+  content: 'Powerd by GamingWorld Network';
+  margin-left: 50px;
+}
