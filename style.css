@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 *
 {
     margin: 0;
@@ -6,129 +5,103 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
-*::selection
-{
-    color: #888;
-}
 body
 {
-    background-color: #123;
+    background: #123;
 }
-.überschrift
+h1
 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding: 10px;
-    font-size: 2.7em;
-    background: linear-gradient(to right,#2c2c2c,#888,aqua,#888,#2c2c2c);
-    border-bottom-left-radius: 50%;
-    text-align: center;
-    width: 100vh;
-    border-bottom-right-radius: 50%;
-}
-.überschrift::after
-{
-    content: 'Stundenplan klasse 9b ist voll cool';
-    font-size: 50%;
-    position: absolute;
-    box-shadow: 0 10px 100px aqua;
-    z-index: -2;
-    border-radius: 50%;
-    top: 0;
-    left: 40%;
-    height: 60px;
-}
-.tabel
-{
-    margin: auto;
-    width: 1000px;
-    height: 580px;
-    background-color: #7fff00;
-    margin-top: 80px;
-    box-shadow: 0 -15px 15px rgba(0,0, 0, 0.5),
-                inset 0 -15px 15px rgba(255,255,255, 0.3),
-                inset 0 15px 15px rgba(255,255,255, 0.5),
-                 0 15px 15px rgba(0,0, 0, 0.5);
-    border-radius: 50px;
-    transition: 0.5s ease-in-out;
-}
-.list
-{
-  font-size: 2em;
   display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
 }
-.oben
+.buttons
 {
-    background-color: #0a801d;
-    border: none; 
-    height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
-hr
+.buttons a
 {
-    background-color: #214364;
-    border: none; 
-    height: 3px;
+  position: relative;
+  width: 160px;
+  height: 60px;
+  display: inline-block;
+  background: #fff;
+  margin: 20px;
+  font-size: 0.9em;
 }
-.le1
+.buttons a::before,
+.buttons a::after
 {
-    font-size: 2em;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 20px;   
+  content: '';
+  position: absolute;
+  background: #f00;
+  inset: 0;
+  transition: 0.5s;
 }
-.le2
+.buttons a:hover::before
 {
-    font-size: 2em;
-    display: flex;
-    list-style: none;
-    cursor: pointer;
-    justify-content: space-between;
-    padding: 20px;   
+  inset: -3px;
 }
-.le3    
+.buttons a:hover::after
 {
-    font-size: 2em;
-    display: flex;
-    list-style: none;
-    cursor: pointer;
-    justify-content: space-between;
-    padding: 20px;   
+  inset: -3px;
+  filter: blur(10px);
 }
-.le4
+
+.buttons a:nth-child(1):before,
+.buttons a:nth-child(1):after
 {
-    font-size: 2em;
-    display: flex;
-    cursor: pointer;
-    list-style: none;
-    justify-content: space-between;
-    padding: 20px;   
+  background: linear-gradient(45deg, #00ccff, #0e1538,#0e1538,#d400d4);
 }
-.le5
+.buttons a:nth-child(2):before,
+.buttons a:nth-child(2):after
 {
-    font-size: 2em;
-    display: flex;
-    cursor: pointer;
-    list-style: none;
-    justify-content: space-between;
-    padding: 20px;   
+  background: linear-gradient(45deg, #ff075b, #0e1538,#0e1538,#1aff22);
 }
-.le6
+.buttons a:nth-child(3):before,
+.buttons a:nth-child(3):after
 {
-    font-size: 2em;
-    cursor: pointer;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding: 20px;   
+  background: linear-gradient(45deg, #fffb00, #0e1538,#0e1538,#5900ff);
 }
-.striche
+.buttons a:nth-child(4):before,
+.buttons a:nth-child(4):after
 {
-    text-decoration: line-through;
+  background: linear-gradient(45deg, #1aff22, #0e1538,#0e1538,#00ccff);
+}
+
+.buttons a span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: #0e1528;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #040a29;
+  overflow: hidden;
+}
+.buttons a span::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.075);
+  transform: skew(25deg);
 }
