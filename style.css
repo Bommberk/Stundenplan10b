@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
 }
 *::selection
 {
@@ -12,7 +13,7 @@
 }
 body
 {
-    background: #123;
+    background: var(--white);
 }
 h1
 {
@@ -21,7 +22,7 @@ h1
   text-align: center;
   font-size: 3.5em;
   font-weight: 100;
-  color: #fff;
+  color: var(--black);
 }
 .buttons
 {
@@ -120,7 +121,7 @@ h1
 }
 h2
 {
-  color: #fff;
+  color: var(--black);
 }
 .gmworld
 {
@@ -159,4 +160,39 @@ h2
     position: absolute;
     margin-top: 120px;
   }
+}
+:root
+{
+  --white: #eeeeee;
+  --white2: #e6e6e6;
+  --black: #000;
+}
+.dark
+{
+  --white: #123;
+  --white2: #001623;
+  --black: #eeeeee;
+}
+.container
+{
+  background: var(--white2);
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+.container .kreis
+{
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  border-radius: 50%;
+  transform: scale(0.75);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.dark .container .kreis
+{
+  margin-left: 50%;
 }
