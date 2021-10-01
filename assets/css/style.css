@@ -196,3 +196,26 @@ h2
 {
   margin-left: 50%;
 }
+.container::after
+{
+  content: 'Switch to Darkmode';
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+  font-size: 1.3em;
+}
+.dark .container::after
+{
+  content: 'Switch to Lightmode';
+}
+.container .kreis::before
+{
+  content: '\f185';
+  font-family: fontAwesome;
+  font-size: 4em;
+  color: var(--black);
+}
+.dark .container .kreis::before
+{
+  content: '\f186';
+}
