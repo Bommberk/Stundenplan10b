@@ -132,13 +132,3 @@ hr
 {
     text-decoration: line-through;
 }
-footer
-{
-    height: 50px;
-    background: #09121b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    color: #b9b9b9;
-}
