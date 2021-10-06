@@ -123,44 +123,6 @@ h2
 {
   color: var(--black);
 }
-.gmworld
-{
-  display: flex;
-  justify-content: center;
-  margin-top: -70px;
-  margin-bottom: 20px;
-}
-.gmworld img
-{
-  border-radius: 50%;
-  width: 100px;
-}
-.gmworld .strich
-{
-  width: 1px;
-  height: 100px;
-  margin-left: 10px;
-  background: var(--black);
-}
-.gmworld h3
-{
-  color: var(--black);
-  text-align: center;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-@media (max-width: 450px)
-{
-  .gmworld .strich
-  {
-    display: none;
-  }
-  .gmworld h3
-  {
-    position: absolute;
-    margin-top: 120px;
-  }
-}
 :root
 {
   --white: #eeeeee;
