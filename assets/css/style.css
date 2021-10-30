@@ -87,8 +87,8 @@ h1
 {
   background: linear-gradient(45deg, #1aff22, #0e1538,#0e1538,#00ccff);
 }
-.buttons a:nth-child(8):before,
-.buttons a:nth-child(8):after
+.buttons a:nth-child(9):before,
+.buttons a:nth-child(9):after
 {
   color: #000;
   text-align: center;
