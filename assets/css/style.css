@@ -157,6 +157,10 @@ h1
   align-items: center;
   cursor: pointer;
 }
+.container .kreis:active
+{
+  color: red;
+}
 .dark .container .kreis
 {
   margin-left: 50%;
