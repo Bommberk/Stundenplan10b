@@ -178,11 +178,7 @@ h1
   content: '\f185';
   font-family: fontAwesome;
   font-size: 4em;
-  color: var(--black);
-}
-.container .kreis:active:before
-{
-  color: #f00;
+  color: red;
 }
 .dark .container .kreis::before
 {
