@@ -163,7 +163,7 @@ h1
 }
 .container::after
 {
-  content: 'Switch to Darkmode';
+  content: 'Switch to ';
   display: flex;
   justify-content: center;
   color: var(--black);
