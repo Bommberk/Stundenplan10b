@@ -187,6 +187,12 @@ h1
   justify-content: center;
   align-items: center;
 }
+.container .kreis:active
+{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2),
+              inset 0 -5px 5px rgba(0,0,0,0.7),
+              inset 0 2px 5px rgba(0,0,0,0.9);
+}
 .dark .container .kreis
 {
   margin-left: 50%;
@@ -209,8 +215,12 @@ h1
   font-family: fontAwesome;
   font-size: 4em;
   color: var(--black);
+  color: #ffff00;
+  filter: drop-shadow(0 0 20px #ff0) drop-shadow(0 0 40px #ff0);
 }
 .dark .container .kreis::before
 {
   content: '\f186';
+  color: #b4f0ff;
+  filter: drop-shadow(0 0 20px #b4f0ff) drop-shadow(0 0 40px #b4f0ff);
 }
