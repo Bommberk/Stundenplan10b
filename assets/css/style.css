@@ -15,6 +15,36 @@ body
 {
     background: var(--white);
 }
+.dreieck
+{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: var(--white);
+  left: 25%;
+  top: -20px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index: -2;
+}
+.überdeckung
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  left: 280px;
+  z-index: -2;
+}
+.diagonale
+{
+  position: absolute;
+  width: 10px;
+  height: 1800px;
+  background: black;
+  filter: blur(20px);
+  transform: rotate(-45deg) translateY(25px) translateX(900px);
+  z-index: -100;
+}
 h1
 {
   display: flex;
