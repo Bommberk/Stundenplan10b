@@ -14,9 +14,39 @@
 body
 {
     background: var(--white);
+    background-image: url(/assets/image/chrismas\ card.jpg);
     background-size: cover;
 }
-
+/* .dreieck
+{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: var(--white);
+  left: 25%;
+  top: -20px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index: -2;
+}
+.überdeckung
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  left: 280px;
+  z-index: -2;
+}
+.diagonale
+{
+  position: absolute;
+  width: 10px;
+  height: 1800px;
+  background: black;
+  filter: blur(20px);
+  transform: rotate(-45deg) translateY(25px) translateX(900px);
+  z-index: -100;
+} */
 h1
 {
   display: flex;
@@ -130,4 +160,75 @@ h1
 .überschriften
 {
   color: var(--black);
+}/* 
+:root
+{
+  --white: #eeeeee;
+  --white2: #e6e6e6;
+  --black: #000;
 }
+.dark
+{
+  --white: #123;
+  --white2: #001623;
+  --black: #eeeeee;
+}
+.container
+{
+  background: var(--white2);
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+.container .kreis
+{
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  border-radius: 50%;
+  transform: scale(0.75);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .kreis:active
+{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2),
+              inset 0 -5px 5px rgba(0,0,0,0.7),
+              inset 0 2px 5px rgba(0,0,0,0.9);
+}
+.dark .container .kreis
+{
+  margin-left: 50%;
+}
+.container::after
+{
+  content: 'Switch to Darkmode';
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+  font-size: 1.3em;
+}
+.dark .container::after
+{
+  content: 'Switch to Lightmode';
+}
+.container .kreis::before
+{
+  content: '\f185';
+  font-family: fontAwesome;
+  font-size: 4em;
+  color: var(--black);
+  color: #ffff00;
+  filter: drop-shadow(0 0 20px #ff0) drop-shadow(0 0 40px #ff0);
+}
+.dark .container .kreis::before
+{
+  content: '\f186';
+  color: #b4f0ff;
+  filter: drop-shadow(0 0 20px #b4f0ff) drop-shadow(0 0 40px #b4f0ff);
+} */
