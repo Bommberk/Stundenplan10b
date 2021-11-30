@@ -95,7 +95,10 @@ h1
   inset: -3px;
   filter: blur(10px);
 }
-
+.buttons:nth-child(1)
+{
+  color: #000;
+}
 .buttons a:nth-child(2):before,
 .buttons a:nth-child(2):after
 {
@@ -160,7 +163,7 @@ h1
 }
 .überschriften
 {
-  color: var(--white);
+  color: #fff;
 }
 .postkarte
 {
