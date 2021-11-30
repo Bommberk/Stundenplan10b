@@ -187,7 +187,6 @@ h1
   color: #131313b2;
   font-family: 'Dancing Script', cursive;
 }
-/* 
 :root
 {
   --white: #eeeeee;
@@ -200,6 +199,7 @@ h1
   --white2: #001623;
   --black: #eeeeee;
 }
+/* 
 .container
 {
   background: var(--white2);
