@@ -95,7 +95,8 @@ h1
   inset: -3px;
   filter: blur(10px);
 }
-.buttons:nth-child(1)
+.buttons a:nth-child(1):before,
+.buttons a:nth-child(1):after
 {
   color: #000;
 }
