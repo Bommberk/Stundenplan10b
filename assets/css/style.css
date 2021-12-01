@@ -170,7 +170,7 @@ h1
 }
 .schnee .flocken
 {
-  width: 50px;
+  width: 100px;
   animation: schnee 5s linear infinite;
   animation-delay: calc(1s * var(--i));
 }
