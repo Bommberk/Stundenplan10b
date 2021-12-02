@@ -166,12 +166,13 @@ h1
 {
   display: flex;
   justify-content: center;
-  animation: schnee 5s linear infinite;
-  animation-delay: calc(1s * var(--i));
+  margin-top: -200px;
 }
 .schnee .flocke
 {
   width: 100px;
+  animation: schnee 5s linear infinite;
+  animation-delay: calc(1s * var(--i));
 }
 @keyframes schnee
 {
