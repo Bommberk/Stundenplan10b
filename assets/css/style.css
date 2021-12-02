@@ -162,6 +162,10 @@ h1
   background: rgba(255,255,255,0.075);
   transform: skew(25deg);
 }
+.flocke
+{
+  width: 200px;
+}
 .überschriften
 {
   color: #fff;
