@@ -167,11 +167,9 @@ h1
   display: flex;
   justify-content: center;
   animation: schnee 5s linear infinite;
-  position: absolute;
-  top: -200px;
   animation-delay: calc(1s * var(--i));
 }
-.flocke
+.schnee .flocke
 {
   width: 100px;
 }
