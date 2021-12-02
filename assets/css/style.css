@@ -166,10 +166,27 @@ h1
 {
   display: flex;
   justify-content: center;
+  animation: schnee 5s linear infinite;
+  top: -200px;
 }
 .flocke
 {
   width: 100px;
+}
+@keyframes schnee
+{
+  0%
+  {
+    transform: translateY(0);
+  }
+  30%
+  {
+    transform: translateY(400px);
+  }
+  0%
+  {
+    transform: translateY(1100px);
+  }
 }
 .überschriften
 {
