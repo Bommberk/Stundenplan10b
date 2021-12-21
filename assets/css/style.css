@@ -300,14 +300,13 @@ h1
 }
 footer
 {
+  height: 50px;
+  width: 100%;
+  background: #001623;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 50px;
-  width: 100%;
-  z-index: 200;
-  background: #001623;
   color: #00fe78;
 }
 /* 
