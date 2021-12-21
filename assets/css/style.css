@@ -307,6 +307,8 @@ footer
   height: 50px;
   width: 100%;
   z-index: 200;
+  background: #001623;
+  color: #00fe78;
 }
 /* 
 .container
