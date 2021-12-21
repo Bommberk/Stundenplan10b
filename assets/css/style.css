@@ -298,6 +298,15 @@ h1
   --white2: #001623;
   --black: #eeeeee;
 }
+footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+}
 /* 
 .container
 {
