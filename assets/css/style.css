@@ -15,8 +15,45 @@
 body
 {
     background: var(--white);
-    background-image: url(/assets/image/hintergrund\ chrismas.jpg);
+    background-image: url(/assets/image/silvester.jpg);
     background-size: cover;
+}
+i
+{
+    position: absolute;
+    height: 200px;
+    top: -200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: silvester 5s linear infinite;
+    z-index: -3;
+}
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent, #0ff);
+
+}
+i:nth-child(3n+2)
+{
+    background: linear-gradient(transparent, #0f0);
+
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent, #f00);
+
+}
+@keyframes silvester
+{
+    0%
+    {
+        transform: translateY(-200px);
+    }
+    100%
+    {
+        transform: translateY(calc(100vh + 200px));
+    }
 }
 .center
 {
@@ -225,7 +262,7 @@ h1
   background: rgba(255,255,255,0.075);
   transform: skew(25deg);
 }
-.schnee
+/* .schnee
 {
   display: flex;
   justify-content: center;
@@ -251,7 +288,7 @@ h1
   {
     transform: translateY(1100px);
   }
-}
+} */
 .überschriften
 {
   color: #fff;
