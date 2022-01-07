@@ -356,7 +356,6 @@ footer
   text-align: center;
   color: #00fe78;
 }
-/* 
 .container
 {
   background: var(--white2);
@@ -415,4 +414,4 @@ footer
   content: '\f186';
   color: #b4f0ff;
   filter: drop-shadow(0 0 20px #b4f0ff) drop-shadow(0 0 40px #b4f0ff);
-} */
+}
