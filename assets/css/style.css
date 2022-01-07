@@ -305,11 +305,7 @@ h1
 } */
 .überschriften
 {
-  color: #fff;
-}
-.überschriften2
-{
-  color: #000;
+  color: var(--black);
 }
 /* .postkarte
 {
