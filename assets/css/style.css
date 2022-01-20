@@ -294,17 +294,6 @@ h1
   --white2: #001623;
   --black: #eeeeee;
 }
-footer
-{
-  height: 50px;
-  width: 100%;
-  background: #001623;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #00fe78;
-}
 .container
 {
   background: var(--white2);
