@@ -3,7 +3,7 @@ let knopf = document.getElementById("darkmode");
 let body = document.querySelector("body");
 
 function darkmode(){
-    body.classList.toggle("dark")
+    body.classList.toggle("dark");
 }
 // function rain(){
 //     let amount = 150;
