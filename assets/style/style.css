@@ -1,40 +1,99 @@
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900%27');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand',sans-serif;
+    transition: 0.3s;
 }
-body{
-    background: linear-gradient(45deg, #8486AE, #647fa6);
-    height: 100vh;
+.buttons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -20px;
+  flex-direction: column;
 }
-#container{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(p404.png), #151729;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 5);
+.buttons a
+{
+  position: relative;
+  width: 160px;
+  height: 60px;
+  display: inline-block;
+  background: #fff;
+  margin: 20px;
+  font-size: 0.9em;
 }
-#container .content{
-    max-width: 850px;
-    text-align: center;
+.buttons a::before,
+.buttons a::after
+{
+  content: '';
+  position: absolute;
+  background: #f00;
+  inset: 0;
+  transition: 0.5s;
+}
+.buttons a:hover::before
+{
+  inset: -3px;
+}
+.buttons a:hover::after
+{
+  inset: -3px;
+  filter: blur(10px);
 }
 
-#container .content h2{
-    font-size: 11vw;
-    color: #fff;
-    line-height: 1em;
+.buttons a:nth-child(1):before,
+.buttons a:nth-child(1):after
+{
+  background: linear-gradient(45deg, #f00, #0e1538,#0e1538,#a7f9ff);
+}
+.buttons a:nth-child(2):before,
+.buttons a:nth-child(2):after
+{
+  background: linear-gradient(45deg, #00ccff, #0e1538,#0e1538,#d400d4);
+}
+.buttons a:nth-child(3):before,
+.buttons a:nth-child(3):after
+{
+  background: linear-gradient(45deg, #ff075b, #0e1538,#0e1538,#1aff22);
+}
+.buttons a:nth-child(4):before,
+.buttons a:nth-child(4):after
+{
+  background: linear-gradient(45deg, #fffb00, #0e1538,#0e1538,#5900ff);
 }
 
-#container .content p{
-    color: #fff;
-    font-size: 1.2em;
+.buttons a span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: #0e1528;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #040a29;
+  overflow: hidden;
+}
+.buttons a span::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.075);
+  transform: skew(25deg);
 }
