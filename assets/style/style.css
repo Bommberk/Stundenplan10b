@@ -1,24 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-*
-{
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900%27');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand',sans-serif;
-    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
-:root
-{
-    --Gelb: #ff0;
-    --schwarz: #000;
+body{
+    background: linear-gradient(45deg, #8486AE, #647fa6);
+    height: 100vh;
 }
-.dark
-{
-    --Gelb: #f0f;
-    --schwarz: #0ff;
+#container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(p404.png), #151729;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 5);
 }
-*::selection
-{
-    background: var(--Gelb);
-    color: var(--schwarz);
+#container .content{
+    max-width: 850px;
+    text-align: center;
+}
+
+#container .content h2{
+    font-size: 11vw;
+    color: #fff;
+    line-height: 1em;
+}
+
+#container .content p{
+    color: #fff;
+    font-size: 1.2em;
 }
