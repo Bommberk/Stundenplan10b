@@ -1,0 +1,41 @@
+var kreis = document.getElementById("kreis");
+var body = document.querySelector("body")
+var handymenü = document.getElementById("handymenü");
+var handystundenplan = document.getElementById("handy-stundenplan");
+var popupinfo = document.getElementById("popup-info");
+var popupfranz = document.getElementById("popup-franz");
+var popupsowi = document.getElementById("popup-sowi");
+var popupbio = document.getElementById("popup-bio");
+
+
+// Darkmode
+function darkmode(){
+    kreis.classList.toggle("schiebung");
+    body.classList.toggle("dark")
+}
+
+// Menüknopf handy
+function container2(){
+    document.getElementById("eins").classList.toggle("rotate1");
+    document.getElementById("zwei").classList.toggle("rotate2");
+    document.getElementById("drei").classList.toggle("active");
+    handymenü.classList.toggle("schiebung");
+}
+
+// Popups
+// Popup-info
+function popup1(){
+    popupinfo.classList.toggle("erscheinung");
+}
+// popup-französisch
+function popup2(){
+    popupfranz.classList.toggle("erscheinung");
+}
+// popup-Sowi
+function popup3(){
+    popupsowi.classList.toggle("erscheinung");
+}
+// popup-Bio
+function popup4(){
+    popupbio.classList.toggle("erscheinung");
+}
