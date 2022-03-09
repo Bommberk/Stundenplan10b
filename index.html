@@ -1,62 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kommt bald!</title>
+    <meta charset="UTF-8" http-equiv="refresh" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <title>Stundenplan9b</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/header.css">
 </head>
 <body>
-    <div id="container">
-        <div class="content">
-            <h2>Kommt bald!</h2>
-            <p>Wir arbeiten an stundenplan9b.ml</p>
+
+    <!-- Header -->
+    <header>
+      <div class="boas-wunsch">
+        <div class="drüber"></div>
+      </div>
+        <!-- Homeknopf -->
+        <div class="home">
+            <h2><a href="index.html"><span>S</span>tundenplan9b</a></h2>
         </div>
-    </div>
+        <!-- Liste -->
+        <div class="liste">
+            <ul>
+              <li class="hover-stunden">Stundenpläne <i class="fas fa-sort-down"></i></li>
+                  <!-- Dropdown -->
+                <div class="stundenpläne">
+                  <li onclick="popup1()">Informatik</li>
+                  <li onclick="popup2()">Französisch</li>
+                  <li onclick="popup3()">Sozialwissenschaften</li>
+                  <li onclick="popup4()">Biologie</li>
+                </div>
 
-    <style>
+        <li class="test"><a target="blank" href="https://rshw.de">Über uns</a></li>                                     
+              <li class="test"><a href="#">News</a></li>
+
+    
+
+
+        <!-- Menübutton -->
+            <div onclick="container2()" class="menü">
+              <span id="eins"></span>
+              <span id="zwei"></span>
+              <span id="drei"></span>
+            </div>
+            
+            <!-- Handymenü -->
+            <div id="handymenü" class="handymenü">
+              <li onclick="popuphandy1()">Informatik</li>
+              <li onclick="popuphandy2()">Französisch</li>
+              <li onclick="popuphandy3()">Sozialwissenschaften</li>
+              <li onclick="popuphandy4()">Biologie</li>
+            </div>
+
+
+          <!-- ende menü -->
+            </ul>
+        </div>
         
-        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900%27');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body{
-            background: linear-gradient(45deg, #8486AE, #647fa6);
-            height: 100vh;
-        }
-        #container{
-            position: absolute;
-            top: 10%;
-            left: 10%;
-            right: 10%;
-            bottom: 10%;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url(p404.png), #151729;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 5);
-        }
-        #container .content{
-            max-width: 850px;
-            text-align: center;
-        }
+                <!-- Popup -->
+                <!-- Popup-info -->
+                <div id="popup-info" class="popup-info">
+                  <i onclick="popup1()" class="fa-solid fa-xmark"></i>
+                  <a href="#"><li>Orchester</li></a>
+                  <a href="#"><li>Technik</li></a>
+                  <a href="#"><li>Kunst</li></a>
+                </div>
 
-        #container .content h2{
-            font-size: 11vw;
-            color: #fff;
-            line-height: 1em;
-        }
+                <!-- Popup-Französisch -->
+                <div id="popup-franz" class="popup-franz">
+                  <i onclick="popup2()" class="fa-solid fa-xmark"></i>
+                  <a href="#"><li>Orchester</li></a>
+                  <a href="#"><li>Technik</li></a>
+                  <a href="#"><li>Kunst</li></a>
+                </div>
+                <!-- Popup-Sowi -->
+                <div id="popup-sowi" class="popup-sowi">
+                  <i onclick="popup3()" class="fa-solid fa-xmark"></i>
+                  <a href="#"><li>Orchester</li></a>
+                  <a href="#"><li>Technik</li></a>
+                  <a href="#"><li>Kunst</li></a>
+                </div>
+                <!-- Popup-Bio -->
+                <div id="popup-bio" class="popup-bio">
+                  <i onclick="popup4()" class="fa-solid fa-xmark"></i>
+                  <a href="#"><li>Orchester</li></a>
+                  <a href="#"><li>Technik</li></a>
+                  <a href="stundenpläne/bio-kunst/index.html"><li>Kunst</li></a>
+                </div>
 
-        #container .content p{
-            color: #fff;
-            font-size: 1.2em;
-        }
 
-    </style>
+                <!-- Popup- Handy -->
+                <!-- Popup-handy-info -->
+                <div id="popup-handy-info" class="popup-handy-info">
+                  <i onclick="popuphandy1()" class="fa-solid fa-xmark"></i>
+                  <li>Orchester</li>
+                  <li>Technik</li>
+                  <li>Kunst</li>
+                </div>
+
+                <!-- Popup-handy-Französisch -->
+                <div id="popup-franz" class="popup-franz">
+                  <i onclick="popup2()" class="fa-solid fa-xmark"></i>
+                  <li>Orchester</li>
+                  <li>Technik</li>
+                  <li>Kunst</li>
+                </div>
+                <!-- Popup-handy-Sowi -->
+                <div id="popup-sowi" class="popup-sowi">
+                  <i onclick="popup3()" class="fa-solid fa-xmark"></i>
+                  <li>Orchester</li>
+                  <li>Technik</li>
+                  <li>Kunst</li>
+                </div>
+                <!-- Popup-handy-Bio -->
+                <div id="popup-bio" class="popup-bio">
+                  <i onclick="popup4()" class="fa-solid fa-xmark"></i>
+                  <li>Orchester</li>
+                  <li>Technik</li>
+                  <li>Kunst</li>
+                </div>
+
+
+        <!-- Darkmode -->
+        <div class="darkmode">
+            <div class="container">
+                <div id="kreis" onclick="darkmode()" class="kreis"></div>
+            </div>
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    <script src="https://kit.fontawesome.com/350675982b.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
 
 </body>
 </html>
