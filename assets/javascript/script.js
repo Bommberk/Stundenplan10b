@@ -1,14 +1,15 @@
 var kreis = document.getElementById("kreis");
-var body = document.querySelector("body")
+var body = document.querySelector("body");
 var popupinfo = document.getElementById("popup-info");
 var popupfranz = document.getElementById("popup-franz");
 var popupsowi = document.getElementById("popup-sowi");
 var popupbio = document.getElementById("popup-bio");
 var handymenü = document.getElementById("handymenü");
-var popuphandyinfo = document.getElementById("popup-handy-info")
-var popuphandyfranz = document.getElementById("popup-handy-franz")
-var popuphandysowi = document.getElementById("popup-handy-sowi")
-var popuphandybio = document.getElementById("popup-handy-bio")
+var popuphandyinfo = document.getElementById("popup-handy-info");
+var popuphandyfranz = document.getElementById("popup-handy-franz");
+var popuphandysowi = document.getElementById("popup-handy-sowi");
+var popuphandybio = document.getElementById("popup-handy-bio");
+var auswahlmenü = document.getElementById("auswahlmenü");
 
 
 // Darkmode
@@ -22,6 +23,10 @@ function container2(){
     document.getElementById("eins").classList.toggle("rotate1");
     document.getElementById("zwei").classList.toggle("rotate2");
     document.getElementById("drei").classList.toggle("active");
+    auswahlmenü.classList.toggle("schiebung");
+}
+
+function handyauswahl(){
     handymenü.classList.toggle("schiebung");
 }
 
