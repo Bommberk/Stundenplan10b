@@ -22,3 +22,10 @@
     background: var(--Gelb);
     color: var(--schwarz);
 }
+.anrufen
+{
+    position: absolute;
+    top: 50%;
+    font-size: 3em;
+    z-index: 1000;
+}
