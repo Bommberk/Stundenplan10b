@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.stundenplan
+{
+    width: 1000px;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    border-radius: 10px;
+    box-shadow: inset 0 0 30px black;
+}
+.stundenplan .tage
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .tage li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+}
+.stundenplan .eins
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .eins li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 100px;
+}
+.stundenplan .eins li:nth-child(1)
+{
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+.stundenplan .zwei
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .zwei li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 180px;
+}
+.stundenplan .zwei li:nth-child(1)
+{
+    font-size: 1.3em;
+    padding-right: 20px;
+}
+.stundenplan .drei
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .drei li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 260px;
+}
+.stundenplan .drei li:nth-child(1)
+{
+    font-size: 1.3em;
+    padding-right: 25px;
+}
+.stundenplan .vier
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .vier li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 340px;
+}
+.stundenplan .vier li:nth-child(1)
+{
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+.stundenplan .fünf
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .fünf li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 420px;
+}
+.stundenplan .fünf li:nth-child(1)
+{
+    font-size: 1.3em;
+    padding-right: 0px;
+}
+.stundenplan .sechs
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.stundenplan .sechs li
+{
+    list-style: none;
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 500px;
+}
+.stundenplan .sechs li:nth-child(1)
+{
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+.mathe
+{
+    color: green;
+}
+.info
+{
+    color: grey;
+}
+.englisch
+{
+    color: blue;
+}
+.geschichte
+{
+    color: orange;
+}
+.deutsch
+{
+    color: red;
+}
+.politik
+{
+    color: purple;
+}
+.orchester
+{
+    color: gold;
+}
+span
+{
+    color: transparent;
+    user-select: none;
+}
+.pp
+{
+    color: pink;
+}
+.kunst
+{
+    color: rgb(206, 120, 228);
+}
+.chemie
+{
+    color: rgb(228, 228, 74);
+}
+.sport
+{
+    color: dodgerblue;
+}
+.frei
+{
+    animation: bund 5s linear infinite;
+    color: #1eff00;
+}
+@keyframes bund
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}

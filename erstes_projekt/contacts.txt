@@ -1,6 +1,0 @@
-[
-    {
-        "name": "Jim Samuel",
-        "phone": "234"
-    }
-]
