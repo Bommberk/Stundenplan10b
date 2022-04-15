@@ -15,7 +15,8 @@
 }
 body
 {
-    background: var(--white);
+    background-image: url(assets/bilder/ostern.png);
+    background-size: cover;
 }
 /* header */
 header
