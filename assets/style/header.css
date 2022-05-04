@@ -13,11 +13,6 @@
     --white: #1e1e24;
     --white2: #141414e8;
 }
-body
-{
-    background-image: url(assets/bilder/ostern.png);
-    background-size: cover;
-}
 /* header */
 header
 {

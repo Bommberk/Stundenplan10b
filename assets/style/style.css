@@ -22,10 +22,7 @@
     background: var(--Gelb);
     color: var(--schwarz);
 }
-.bild_ostern
+body
 {
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    position: fixed;
+    background: var(--white);
 }
