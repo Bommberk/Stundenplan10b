@@ -139,8 +139,8 @@
     
     
 
-    <div class="container">
-        <div class="counter">
+    <div style="display: block; margin-top: 200px;" class="container">
+        <div style="display: flex;" class="counter">
             <div class="day">
                 <h2 id="day">12</h2>
                 <p>Days</p>
