@@ -139,7 +139,6 @@
     
     
 
-
     <div class="container">
         <div class="counter">
             <div class="day">
@@ -181,13 +180,13 @@
             
         );
 
-        print_r($datum2);
+        // print_r($datum2);
+// 
+        // ksort($datum2);
+// 
+        // echo "<br>";
 
-        ksort($datum2);
-
-        echo "<br>";
-
-        print_r($datum2);
+        // print_r($datum2);
 
         $zähler = 0;
         $temp = 0;
@@ -201,7 +200,7 @@
             if($difference2 > 0){
                 if($temp == 0){$temp = $difference2;}
                 if($temp >= $difference2){
-                    echo $zähler."<li>".$hallo."<br>".$hallots."<br>";
+                    // echo $zähler."<li>".$hallo."<br>".$hallots."<br>";
                 }
             }
             
@@ -308,7 +307,6 @@
     
 
     </script>
-
 
 
     <script src="https://kit.fontawesome.com/350675982b.js" crossorigin="anonymous"></script>
