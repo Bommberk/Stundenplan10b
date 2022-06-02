@@ -26,3 +26,7 @@ body
 {
     background: var(--white);
 }
+h2
+{
+    margin-top: 200px;
+}

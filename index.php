@@ -4,8 +4,10 @@
     <meta charset="UTF-8" http-equiv="refresh" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>Stundenplan9b</title>
+    <!-- <link rel="stylesheet" href="assets/style/header.css"> -->
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/countdown.css">
 </head>
 <body>
 
@@ -136,8 +138,161 @@
     </header>
 
 
+    <pre>
+    <?php
+    
+        $datum = array();
+        $now = time();
+        $now2 = date("d.m.Y H:i:s", $now);
 
 
+        $termine = array(
+
+            "2022-09-28 08:00:00" => "Herbstferien",
+            "2022-09-05 08:00:00" => "Mein Geburtstag",
+            "2022-12-24 08:00:00" => "Weihnachten",
+            "2022-06-24 11:30:00" => "Sommerferien",
+
+        );
+
+        
+        ksort($termine);
+
+        // print_r($termine);
+
+        
+
+
+        $zähler = 0;
+        $temp = 0;
+
+        foreach($termine as $hallo => $namekey){
+
+            $hallots = strtotime($hallo);
+            $difference2 = $hallots - $now;
+
+            if($difference2 > 0){
+
+
+                if($temp == 0){$temp = $difference2;}
+                if($temp >= $difference2){
+
+
+                    $nummerTermin = $zähler;
+                    $nameTermin = $namekey;
+                    $zeitTermin = $hallo;
+                }
+                
+                $temp = $difference2;
+            }
+            $zähler++;
+        }
+
+        // echo "<br>";
+        // echo $nummerTermin;
+        // echo "<br>";
+        // echo $nameTermin;
+        // echo "<br>";
+        // echo $zeitTermin;
+
+        
+        $zeitende = $zeitTermin;
+        $zeitende2 = strtotime($zeitende);
+
+
+        $difference = $zeitende2 - $now;
+
+        $min = 60;
+        $hour = 60 * $min;
+        $day = 24 * $hour;
+
+         $datum['rest_tage'] = floor($difference / $day);
+        $difference = $difference - $datum['rest_tage'] * $day;
+
+        $datum['rest_stunden'] = floor($difference / $hour);
+        $difference = $difference - $datum['rest_stunden'] * $hour;
+
+         $datum['rest_minuten'] = floor($difference / $min);
+        $difference = $difference - $datum['rest_minuten'] * $min;
+
+
+
+    ?>
+    
+    <div class="container2">
+        <div class="counter">
+            <div class="day">
+                <h2 id="day">12</h2>
+                <p>Days</p>
+            </div>
+            <div class="hour">
+                <h2 id="hour">02</h2>
+                <p>Hours</p>
+            </div>
+            <div class="minute">
+                <h2 id="minute">32</h2>
+                <p>Minutes</p>
+            </div>
+            <div class="second">
+                <h2 id="second"></h2>
+                <p>Seconds</p>
+            </div>
+        </div>
+        <div class="infos">
+          <h3>Bis zu <?=$nameTermin?></h3>
+        </div>
+    </div>
+
+
+    <script>
+
+        var second = document.getElementById("second");
+        var seconds = <?=$difference?>;
+        second.innerHTML = seconds;
+
+        var minute = document.getElementById("minute");
+        var minutes = <?=$datum['rest_minuten']?>;
+        minute.innerHTML = minutes;
+
+        var hour = document.getElementById("hour");
+        var hours = <?=$datum['rest_stunden']?>;
+        hour.innerHTML = hours; 
+
+        var day = document.getElementById("day");
+        var days = <?=$datum['rest_tage']?>;
+        day.innerHTML = days; 
+
+
+        function countdown(){
+            seconds = seconds - 1;
+            second.innerHTML = seconds;
+
+            if(seconds == 0){
+                seconds = 60;
+
+                minutes = minutes - 1;
+                minute.innerHTML = minutes;
+            }
+            
+            if(minutes == 0){
+                minutes = 60;
+
+                hours = hours - 1;
+                hour.innerHTML = hours;
+            }
+            if(hours == 1){
+                hours = 24;
+
+                days = days -1;
+                day.innerHTML = days;
+            }
+            if(days == 0){
+                days = 0;
+            }
+        }
+        setInterval(function(){countdown()}, 1000);
+
+    </script>
 
 
     <script src="https://kit.fontawesome.com/350675982b.js" crossorigin="anonymous"></script>

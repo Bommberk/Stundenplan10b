@@ -1,0 +1,33 @@
+.container2
+{
+    display: block;
+    margin-top: 15%;
+    margin-left: 40%;
+}
+.counter
+{
+    display: flex;
+}
+.counter h2,
+.counter p
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.counter h2
+{
+    color: #fde617;
+    font-size: 3.5em;
+}
+.counter p
+{
+    font-size: 1.5em;
+    color: var(--black);
+}
+.infos
+{
+    color: var(--black);
+    font-size: 3em;
+    margin-top: -200px;
+}
