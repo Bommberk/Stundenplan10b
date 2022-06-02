@@ -26,32 +26,3 @@ body
 {
     background: var(--white);
 }
-.container
-{
-    display: block;
-    margin-left: 500px;
-}
-.counter
-{
-    display: flex;
-}
-.counter h2,
-.counter p
-{
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-}
-.counter h2
-{
-    font-size: 3.5em;
-    color: #ffd000;
-}
-.counter p
-{
-    font-size: 1.3em;
-}
-::-webkit-scrollbar
-{
-    scrollbar-width: none;
-}
