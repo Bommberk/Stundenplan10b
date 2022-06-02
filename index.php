@@ -4,10 +4,15 @@
     <meta charset="UTF-8" http-equiv="refresh" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>Stundenplan9b</title>
+<<<<<<< HEAD
     <!-- <link rel="stylesheet" href="assets/style/header.css"> -->
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/countdown.css">
+=======
+    <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+>>>>>>> bfc23d4397c8172d8d77eb018371b27d421a8ce6
 </head>
 <body>
 
@@ -138,6 +143,7 @@
     </header>
 
 
+<<<<<<< HEAD
     <pre>
     <?php
     
@@ -294,6 +300,10 @@
 
     </script>
 
+=======
+    
+   
+>>>>>>> bfc23d4397c8172d8d77eb018371b27d421a8ce6
 
     <script src="https://kit.fontawesome.com/350675982b.js" crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
