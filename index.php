@@ -139,7 +139,7 @@
     
     
 
-    <div style="display: block; margin-top: 200px;" class="container">
+    <div style="display: block; margin-top: 200px; margin-left: 500px;" class="container">
         <div style="display: flex;" class="counter">
             <div class="day">
                 <h2 id="day">12</h2>
@@ -176,7 +176,7 @@
             
             "2022-06-24 13:13:13" => "Sommerferien",
             "2022-06-02 15:30:00" => "Fertig",
-            "2022-12-24 15:30:00" => "Weihnachten",
+            "2022-12-22 15:30:00" => "Weihnachtsferien",
             
         );
 
@@ -208,7 +208,7 @@
             $name = $hallo;
         }
 
-        echo "Das ist der ".$datum2[$name]." Termin";
+        echo "Bis zu den ".$datum2[$name];
 
 
 
