@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/countdown.css">
-=======
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/style.css">
->>>>>>> bfc23d4397c8172d8d77eb018371b27d421a8ce6
 </head>
 <body>
 
