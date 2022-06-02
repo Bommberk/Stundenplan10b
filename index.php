@@ -297,11 +297,8 @@
         setInterval(function(){countdown()}, 1000);
 
     </script>
-
-=======
     
    
->>>>>>> bfc23d4397c8172d8d77eb018371b27d421a8ce6
 
     <script src="https://kit.fontawesome.com/350675982b.js" crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
