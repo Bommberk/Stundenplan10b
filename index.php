@@ -272,8 +272,8 @@ use PHPMailer\PHPMailer\Exception;
 $bodytext = "neuer Besuchsbericht von Deiner Webseite\r\n";
 $bodytext .= "\r\n";
 $bodytext .= "
-    <h1>Hallo Jamie</h1><br>
-    <h3>Jemand hat Jims Webseite besucht.!</h3><br>
+    <h1>Hallo Jim</h1><br>
+    <h3>Jemand hat Deine Webseite besucht.!</h3><br>
     <h3>IST DAS NICHT RICHTIG COOL!!!</h3>
 ";
 
@@ -284,7 +284,7 @@ $email = new PHPMailer();
 $email->CharSet = 'UTF-8';
 $email->isHTML(true);
 $email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
-$email->Subject = 'neuer Besuchsbericht von ';
+$email->Subject = 'neuer Besuchsbericht ';
 $email->Body = $bodytext;
 $email->AddAddress('jamie.lambeck@rshw.de');
 $email->AddAddress('jim.mohncke@rshw.de');
