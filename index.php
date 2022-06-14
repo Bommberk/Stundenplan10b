@@ -257,7 +257,7 @@ $text = "
         <h1>Hallo Jim</h1><br>
         <h3>Jetzt neu blah blah blah</h3>
 ";
-$text->isHtml(true);
+$text = $text->isHtml(true);
 
 mail($empfaenger, $betreff, $text, $from);
 
