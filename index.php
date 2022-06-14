@@ -251,7 +251,7 @@
     $empfaenger = "jim.mohncke@rshw.de";
 $betreff = "Die Mail-Funktion";
 $from = "From: Jim Mohncke <jim.mohncke@gmail.com>";
-$text = "Hier lernt Ihr, wie man mit PHP Mails verschickt";
+$text = "Hallo Jim, \r\n es kann sein das das hier jetzt als spam angezeigt wird, ist es aber nicht also hab keine angst!!!\r\n Jim";
  
 mail($empfaenger, $betreff, $text, $from);
 
