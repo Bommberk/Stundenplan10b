@@ -280,7 +280,7 @@ $email->AddAddress('jim.mohncke@rshw.de');
 
 $e = $email->Send();
 
-echo $e;
+echo "hallo".$e;
 
 
     ?>
