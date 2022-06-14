@@ -260,6 +260,44 @@ $text = "
 
 mail($empfaenger, $betreff, $text, $from);
 
+
+
+    
+include("PHPMailer-master/src/PHPMailer.php");
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+
+$bodytext = "neuer Besuchsbericht von\r\n";
+$bodytext .= "\r\n";
+$bodytext .= ">> Jim Mohncke \r\n";
+$bodytext .= "\r\n";
+$bodytext .= "Google Link\r\n";
+$bodytext .= "\r\n";
+$bodytext .= "*****************************\r\n";
+$bodytext .= "****Bitte Anhang beachten****\r\n";
+$bodytext .= "*****************************\r\n";
+
+echo "<pre>";
+$email = new PHPMailer();
+#var_dump($email);
+
+$email->CharSet = 'UTF-8';
+$email->isHTML(true);
+$email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
+$email->Subject = 'neuer Besuchsbericht von ';
+$email->Body = $bodytext;
+$email->AddAddress('jim.mohncke@rshw.de');
+
+
+
+
+$e = $email->Send();
+
+echo "hallo".$e;
+
+
     ?>
 
     <script>
