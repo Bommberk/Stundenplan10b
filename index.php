@@ -273,7 +273,7 @@ $email->Encoding = 'quoted-printable';
 $email->SetFrom('jim.mohncke@gmail.com', 'Jim Mohncke');
 $email->Subject = 'neuer Besuchsbericht von ';
 $email->Body = $bodytext;
-$email->AddAddress('jim.mohncke@rshw.de');
+$email->AddAddress('jim.mohncke@gmail.com');
 
 
 
