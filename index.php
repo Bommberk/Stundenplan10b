@@ -246,6 +246,16 @@
         </div>
     </div>
 
+   <?php
+        
+    $empaenger = "jim.monhncke@rshw.de";
+    $von = "praktikant@setolite.pl";
+    $text = "Hallo Jim, das ist erste email!";
+    $betreff = "test";
+              
+        mail($empaenger, $betreff, $text , $von);
+
+    ?>
 
     <script>
 
