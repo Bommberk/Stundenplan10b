@@ -248,14 +248,40 @@
 
    <?php
     
-$to      = 'jim.mohncke@rshw.de';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: jim.merlin.sind.cool@gmail.com' . "\r\n" .
-    'Reply-To: jim.merlin.sind.cool@gmail.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+include("PHPMailer-master/src/PHPMailer.php");
 
-mail($to, $subject, $message, $headers);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+
+$bodytext = "neuer Besuchsbericht von\r\n";
+$bodytext .= "\r\n";
+$bodytext .= ">> Jim Mohncke \r\n";
+$bodytext .= "\r\n";
+$bodytext .= "Google Link\r\n";
+$bodytext .= "\r\n";
+$bodytext .= "*****************************\r\n";
+$bodytext .= "****Bitte Anhang beachten****\r\n";
+$bodytext .= "*****************************\r\n";
+
+echo "<pre>";
+$email = new PHPMailer();
+#var_dump($email);
+
+$email->CharSet = 'UTF-8';
+$email->Encoding = 'quoted-printable';
+$email->SetFrom('jim.mohncke@gmail.com', 'Jim Mohncke');
+$email->Subject = 'neuer Besuchsbericht von ';
+$email->Body = $bodytext;
+$email->AddAddress('jim.mohncke@rshw.de');
+
+
+
+
+$e = $email->Send();
+
+echo $e;
+
 
     ?>
 
