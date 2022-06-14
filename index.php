@@ -248,13 +248,16 @@
 
    <?php
     
-    $name = "Jim";
-    $empaenger = "jim.monhncke@rshw.de";
-    $von = "From:".$name. "<praktikant@setolite.pl>";
-    $text = "Hallo Jim, das ist erste email!";
-    $betreff = "test";
-              
-        mail($empaenger, $betreff, $text , $von);
+$empfaenger = "jim.mohncke@rshw.de"; //Mailadresse
+$absender   = "jim.merlin.sind.cool@gmail.com";
+$betreff    = "PHP-Mail-Test";
+$mailtext   = "Inhalt einer Mail zum Test von PHP";
+$antwortan  = "jim.mohncke@rshw.de";
+
+mail( $empfaenger,
+      $betreff,
+      $mailtext,
+      "From: $absender\nReply-To: $antwortan"); 
 
     ?>
 
