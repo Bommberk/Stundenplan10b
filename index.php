@@ -276,7 +276,7 @@ $bodytext .= "\r\n";
 $bodytext .= "
     <h1>Hallo Jim</h1><br>
     <h3>ich bin der jim</h3>
-    <a style="text-decoration: none; color: black;" href="www.google.com">Hier zu Google</a>
+    <a style='text-decoration: none; color: black;' href='www.google.com'>Hier zu Google</a>
 ";
 
 echo "<pre>";
