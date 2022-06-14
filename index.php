@@ -252,7 +252,7 @@
 
     $empfaenger = "jim.mohncke@rshw.de";
 $betreff = "Die Mail-Funktion";
-$from = "From: Jim Mohncke <jim.mohncke@gmail.com>";
+$from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
 $text = "Hallo Jim, \r\n irgend jemand hat deine Webseite: Stundenplan9b.ml besucht.!";
 
 mail($empfaenger, $betreff, $text, $from);
