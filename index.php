@@ -248,40 +248,12 @@
 
    <?php
     
-include("PHPMailer-master/src/PHPMailer.php");
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-
-$bodytext = "neuer Besuchsbericht von\r\n";
-$bodytext .= "\r\n";
-$bodytext .= ">> Jim Mohncke \r\n";
-$bodytext .= "\r\n";
-$bodytext .= "Google Link\r\n";
-$bodytext .= "\r\n";
-$bodytext .= "*****************************\r\n";
-$bodytext .= "****Bitte Anhang beachten****\r\n";
-$bodytext .= "*****************************\r\n";
-
-echo "<pre>";
-$email = new PHPMailer();
-#var_dump($email);
-
-$email->CharSet = 'UTF-8';
-$email->Encoding = 'quoted-printable';
-$email->SetFrom('jim.merlin.sind.cool@gmail.com', 'Jim Mohncke');
-$email->Subject = 'neuer Besuchsbericht von ';
-$email->Body = $bodytext;
-$email->AddAddress('jim.mohncke@gmail.com');
-
-
-
-
-$e = $email->Send();
-
-echo "hallo".$e;
-
+    $empfaenger = "jim.mohncke@gmail.com";
+$betreff = "Die Mail-Funktion";
+$from = "From: Jim Mohncke <jim.merlin.sind.cool@gmail.com>";
+$text = "Hier lernt Ihr, wie man mit PHP Mails verschickt";
+ 
+mail($empfaenger, $betreff, $text, $from);
 
     ?>
 
