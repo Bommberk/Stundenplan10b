@@ -250,35 +250,12 @@
     
 
 
-    
-include("PHPMailer-master/src/PHPMailer.php");
+    $empfaenger = "jim.mohncke@rshw.de";
+$betreff = "Die Mail-Funktion";
+$from = "From: Jim Mohncke <jim.mohncke@gmail.com>";
+$text = "Hallo Jim, \r\n es kann sein das das hier jetzt als spam angezeigt wird, ist es aber nicht also hab keine angst!!!\r\n Jim";
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-
-$bodytext = "neuer Besuchsbericht von\r\n";
-$bodytext = "Jim\r\n";
-$bodytext .= "Hallo Jim,\r\n wie geht es dir? Geht es dir gut oder geht es dir schlecht?";
-
-echo "<pre>";
-$email = new PHPMailer();
-#var_dump($email);
-
-$email->CharSet = 'UTF-8';
-$email->Encoding = 'quoted-printable';
-$email->SetFrom('jim.merlin.sind.cool@gmail.com', 'Jim Mohncke');
-$email->Subject = 'neuer Besuchsbericht von ';
-$email->Body = $bodytext;
-$email->AddAddress('jim.mohncke@rshw.de');
-
-
-
-
-$e = $email->Send();
-
-echo "hallo".$e;
-
+mail($empfaenger, $betreff, $text, $from);
 
     ?>
 
