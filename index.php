@@ -253,7 +253,10 @@
     $empfaenger = "jim.mohncke@rshw.de";
 $betreff = "Die Mail-Funktion";
 $from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
-$text = "afdlkahahglk jah lkjhh lkjhlkdjfh lsjkghlkjdfh lkdjhlakjfh lkjhöaladksföj ölkjölkfdj öalkjkgöhöahruhtrugh lkbluaruöaiub ";
+$text = "
+        <h1>Hallo Jim</h1><br>
+        <h3>Jetzt neu blah blah blah</h3>
+";
 
 mail($empfaenger, $betreff, $text, $from);
 
