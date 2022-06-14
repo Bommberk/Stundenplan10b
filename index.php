@@ -269,13 +269,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 
-$bodytext = "neuer Besuchsbericht von\r\n";
-$bodytext .= "\r\n";
-$bodytext .= ">> Jim Mohncke \r\n";
+$bodytext = "neuer Besuchsbericht von Deiner Webseite\r\n";
 $bodytext .= "\r\n";
 $bodytext .= "
     <h1>Hallo Jamie</h1><br>
-    <h3>Jemand hat Jims Webseite besucht!!!</h3>
+    <h3>Jemand hat Jims Webseite besucht.!</h3><br>
+    <h3>IST DAS NICHT RICHTIG COOL!!!</h3>
 ";
 
 echo "<pre>";
@@ -295,7 +294,7 @@ $email->AddAddress('jim.mohncke@rshw.de');
 
 $e = $email->Send();
 
-echo "hallo".$e;
+#echo "hallo".$e;
 
 
     ?>
