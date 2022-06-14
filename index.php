@@ -252,7 +252,7 @@ $empfaenger = "jim.mohncke@rshw.de"; //Mailadresse
 $absender   = "jim.merlin.sind.cool@gmail.com";
 $betreff    = "PHP-Mail-Test";
 $mailtext   = "Inhalt einer Mail zum Test von PHP";
-$antwortan  = "jim.mohncke@rshw.de";
+$antwortan  = "jim.merlin.sind.cool@gmail.com";
 
 mail( $empfaenger,
       $betreff,
