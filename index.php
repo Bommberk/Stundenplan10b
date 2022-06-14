@@ -248,12 +248,14 @@
 
    <?php
     
-$empfaenger = "jim.mohncke@rshw.de";
-$betreff = "Die Mail-Funktion";
-$from = "From: Jim Mohncke <jim.merlin.sind.cool@gmail.com>";
-$text = "Hier lernt Ihr, wie man mit PHP Mails verschickt";
- 
-mail($empfaenger, $betreff, $text, $from);
+$to      = 'jim.mohncke@rshw.de';
+$subject = 'the subject';
+$message = 'hello';
+$headers = 'From: jim.merlin.sind.cool@gmail.com' . "\r\n" .
+    'Reply-To: jim.merlin.sind.cool@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
 
     ?>
 
