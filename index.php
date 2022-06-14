@@ -248,13 +248,12 @@
 
    <?php
     
-    $name = "Jim";
-    $empaenger = "jim.monhncke@rshw.de";
-    $von = "jim.merlin.sind.cool@gmail.com";
-    $text = "Hallo Jim, das ist erste email!";
-    $betreff = "test";
-
-    mail($empaenger, $betreff, $text , $von);
+$empfaenger = "jim.mohncke@rshw.de";
+$betreff = "Die Mail-Funktion";
+$from = "From: Jim Mohncke <jim.merlin.sind.cool@gmail.com>";
+$text = "Hier lernt Ihr, wie man mit PHP Mails verschickt";
+ 
+mail($empfaenger, $betreff, $text, $from);
 
     ?>
 
