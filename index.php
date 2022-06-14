@@ -274,9 +274,8 @@ $bodytext .= "\r\n";
 $bodytext .= ">> Jim Mohncke \r\n";
 $bodytext .= "\r\n";
 $bodytext .= "
-    <h1>Hallo Jim</h1><br>
-    <h3>ich bin der jim</h3>
-    <a style='text-decoration: none; color: black;' href='www.google.com'>Hier zu Google</a>
+    <h1>Hallo Jamie</h1><br>
+    <h3>Jemand hat Jims Webseite besucht!!!</h3>
 ";
 
 echo "<pre>";
@@ -288,7 +287,7 @@ $email->isHTML(true);
 $email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
 $email->Subject = 'neuer Besuchsbericht von ';
 $email->Body = $bodytext;
-$email->AddAddress('jim.mohncke@rshw.de');
+$email->AddAddress('jamie.lambeck@rshw.de');
 
 
 
