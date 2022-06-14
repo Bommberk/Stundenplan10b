@@ -248,9 +248,9 @@
 
    <?php
     
-    $empfaenger = "jim.mohncke@gmail.com";
+    $empfaenger = "jim.mohncke@rshw.de";
 $betreff = "Die Mail-Funktion";
-$from = "From: Jim Mohncke <jim.merlin.sind.cool@gmail.com>";
+$from = "From: Jim Mohncke <jim.mohncke@gmail.com>";
 $text = "Hier lernt Ihr, wie man mit PHP Mails verschickt";
  
 mail($empfaenger, $betreff, $text, $from);
