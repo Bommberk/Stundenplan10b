@@ -250,15 +250,15 @@
     
 
 
-    $empfaenger = "jim.mohncke@rshw.de";
-$betreff = "Die Mail-Funktion";
-$from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
-$text = "
-        <h1>Hallo Jim</h1><br>
-        <h3>Jetzt neu blah blah blah</h3>
-";
+  #  $empfaenger = "jim.mohncke@rshw.de";
+#$betreff = "Die Mail-Funktion";
+#$from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
+#$text = "
+#        <h1>Hallo Jim</h1><br>
+#        <h3>Jetzt neu blah blah blah</h3>
+#";
 
-mail($empfaenger, $betreff, $text, $from);
+#mail($empfaenger, $betreff, $text, $from);
 
 
 
@@ -273,11 +273,10 @@ $bodytext = "neuer Besuchsbericht von\r\n";
 $bodytext .= "\r\n";
 $bodytext .= ">> Jim Mohncke \r\n";
 $bodytext .= "\r\n";
-$bodytext .= "Google Link\r\n";
-$bodytext .= "\r\n";
-$bodytext .= "*****************************\r\n";
-$bodytext .= "****Bitte Anhang beachten****\r\n";
-$bodytext .= "*****************************\r\n";
+$bodytext .= "
+    <h1>Hallo Jim</h1><br>
+    <h3>Jetzt neu der neue blah blah blah</h3>
+";
 
 echo "<pre>";
 $email = new PHPMailer();
