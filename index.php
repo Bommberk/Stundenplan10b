@@ -247,9 +247,10 @@
     </div>
 
    <?php
-        
+    
+    $name = "Jim";
     $empaenger = "jim.monhncke@rshw.de";
-    $von = "praktikant@setolite.pl";
+    $von = "From:".$name. "<praktikant@setolite.pl>";
     $text = "Hallo Jim, das ist erste email!";
     $betreff = "test";
               
