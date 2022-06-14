@@ -250,15 +250,16 @@
     
 
 
-  #  $empfaenger = "jim.mohncke@rshw.de";
-#$betreff = "Die Mail-Funktion";
-#$from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
-#$text = "
-#        <h1>Hallo Jim</h1><br>
-#        <h3>Jetzt neu blah blah blah</h3>
-#";
+$empfaenger = "jim.mohncke@rshw.de";
+$betreff = "Die Mail-Funktion";
+$from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
+$text = "
+        <h1>Hallo Jim</h1><br>
+        <h3>Jetzt neu blah blah blah</h3>
+";
+$text->isHtml(true);
 
-#mail($empfaenger, $betreff, $text, $from);
+mail($empfaenger, $betreff, $text, $from);
 
 
 
