@@ -286,9 +286,7 @@ $email->isHTML(true);
 $email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
 $email->Subject = 'neuer Besuchsbericht ';
 $email->Body = $bodytext;
-$email->AddAddress('jamie.lambeck@rshw.de');
 $email->AddAddress('jim.mohncke@rshw.de');
-$email->AddAddress('merlin.hoeller@rshw.de');
 
 
 
