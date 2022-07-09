@@ -43,7 +43,7 @@
             <!-- Handymenü -->
 
             <div id="auswahlmenü" class="auswahlmenü">
-              <li onclick="handyauswahl()">Stundenpläne</li>
+              <li onclick="handyauswahl()"><a href="stundenpläne">Stundenpläne</a></li>
               <a href="https://rshw.de" target="blank"><li>Über uns</li></a>
               <a href="#"><li>News</li></a>
             </div>
