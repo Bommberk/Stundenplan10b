@@ -26,16 +26,8 @@
         <!-- Liste -->
         <div class="liste">
             <ul>
-              <li class="hover-stunden">Stundenpläne <i class="fas fa-sort-down"></i></li>
-                  <!-- Dropdown -->
-                <div class="stundenpläne">
-                  <li onclick="popup1()">Informatik</li>
-                  <li onclick="popup2()">Französisch</li>
-                  <li onclick="popup3()">Sozialwissenschaften</li>
-                  <li onclick="popup4()">Biologie</li>
-                </div>
-
-        <li class="test"><a target="blank" href="https://rshw.de">Über uns</a></li>                                     
+              <li class="hover-stunden"><a href="stundenpläne">Stundenpläne</a></li>
+              <li class="test"><a target="blank" href="https://rshw.de">Über uns</a></li>                                     
               <li class="test"><a href="#">News</a></li>
 
     
@@ -55,82 +47,6 @@
               <a href="https://rshw.de" target="blank"><li>Über uns</li></a>
               <a href="#"><li>News</li></a>
             </div>
-
-            <div id="handymenü" class="handymenü">
-              <i onclick="handyauswahl()" class="fa-solid fa-xmark"></i>
-              <li onclick="popuphandy1()">Informatik</li>
-              <li onclick="popuphandy2()">Französisch</li>
-              <li onclick="popuphandy3()">Sozialwissenschaften</li>
-              <li onclick="popuphandy4()">Biologie</li>
-            </div>
-
-
-          <!-- ende menü -->
-            </ul>
-        </div>
-        
-                <!-- Popup -->
-                <!-- Popup-info -->
-                <div id="popup-info" class="popup-info">
-                  <i onclick="popup1()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/info-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/info-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/info-kunst/index.html"><li>Kunst</li></a>
-                </div>
-
-                <!-- Popup-Französisch -->
-                <div id="popup-franz" class="popup-franz">
-                  <i onclick="popup2()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/französisch-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/französisch-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/französisch-kunst/index.html"><li>Kunst</li></a>
-                </div>
-                <!-- Popup-Sowi -->
-                <div id="popup-sowi" class="popup-sowi">
-                  <i onclick="popup3()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/sowi-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/sowi-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/sowi-kunst/index.html"><li>Kunst</li></a>
-                </div>
-                <!-- Popup-Bio -->
-                <div id="popup-bio" class="popup-bio">
-                  <i onclick="popup4()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/bio-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/bio-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/bio-kunst/index.html"><li>Kunst</li></a>
-                </div>
-
-
-                <!-- Popup- Handy -->
-                <!-- Popup-handy-info -->
-                <div id="popup-handy-info" class="popup-handy">
-                  <i onclick="popuphandy1()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/info-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/info-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/info-kunst/index.html"><li>Kunst</li></a>
-                </div>
-
-                <!-- Popup-handy-Französisch -->
-                <div id="popup-handy-franz" class="popup-handy">
-                  <i onclick="popuphandy2()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/französisch-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/französisch-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/französisch-kunst/index.html"><li>Kunst</li></a>
-                </div>
-                <!-- Popup-handy-Sowi -->
-                <div id="popup-handy-sowi" class="popup-handy">
-                  <i onclick="popuphandy3()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/sowi-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/sowi-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/sowi-kunst/index.html"><li>Kunst</li></a>
-                </div>
-                <!-- Popup-handy-Bio -->
-                <div id="popup-handy-bio" class="popup-handy">
-                  <i onclick="popuphandy4()" class="fa-solid fa-xmark"></i>
-                  <a href="stundenpläne/bio-orchester/index.html"><li>Orchester</li></a>
-                  <a href="stundenpläne/bio-technik/index.html"><li>Technik</li></a>
-                  <a href="stundenpläne/bio-kunst/index.html"><li>Kunst</li></a>
-                </div>
 
         <!-- Darkmode -->
         <div class="darkmode">
@@ -262,35 +178,35 @@
 
 
     
-include("PHPMailer-master/src/PHPMailer.php");
+// include("PHPMailer-master/src/PHPMailer.php");
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-
-$bodytext = "neuer Besuchsbericht von Deiner Webseite\r\n";
-$bodytext .= "\r\n";
-$bodytext .= "
-    <h1>Hallo Jim</h1><br>
-    <h3>Jemand hat Deine Webseite besucht.!</h3><br>
-    <h3>IST DAS NICHT RICHTIG COOL!!!</h3>
-";
-
-echo "<pre>";
-$email = new PHPMailer();
-#var_dump($email);
-
-$email->CharSet = 'UTF-8';
-$email->isHTML(true);
-$email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
-$email->Subject = 'neuer Besuchsbericht ';
-$email->Body = $bodytext;
-$email->AddAddress('jim.mohncke@rshw.de');
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
 
 
+// $bodytext = "neuer Besuchsbericht von Deiner Webseite\r\n";
+// $bodytext .= "\r\n";
+// $bodytext .= "
+//     <h1>Hallo Jim</h1><br>
+//     <h3>Jemand hat Deine Webseite besucht.!</h3><br>
+//     <h3>IST DAS NICHT RICHTIG COOL!!!</h3>
+// ";
+
+// echo "<pre>";
+// $email = new PHPMailer();
+// #var_dump($email);
+
+// $email->CharSet = 'UTF-8';
+// $email->isHTML(true);
+// $email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
+// $email->Subject = 'neuer Besuchsbericht ';
+// $email->Body = $bodytext;
+// $email->AddAddress('jim.mohncke@rshw.de');
 
 
-$e = $email->Send();
+
+
+// $e = $email->Send();
 
 #echo "hallo".$e;
 
