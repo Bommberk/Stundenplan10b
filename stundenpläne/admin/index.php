@@ -52,7 +52,7 @@ $database = new Medoo([
 ]);
 if(isset($_POST["email"]) && $_POST["email"] != "" && isset($_POST["password"]) && $_POST["password"] != ""){
 
-$data = $database->select("test_login", [
+$data = $database->select("logindaten", [
     "id",
     "benutzername",
     "email",
