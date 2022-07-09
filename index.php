@@ -4,7 +4,7 @@
     <meta charset="UTF-8" http-equiv="refresh" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>Stundenplan9b</title>
-
+    
     <!-- <link rel="stylesheet" href="assets/style/header.css"> -->
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/header.css">
@@ -141,7 +141,6 @@
     </header>
 
 
-    <pre>
     <?php
     
         $datum = array();
@@ -246,6 +245,57 @@
         </div>
     </div>
 
+   <?php
+    
+
+
+#$empfaenger = "jim.mohncke@rshw.de";
+#$betreff = "Die Mail-Funktion";
+#$from = "From: Jim Mohncke <jim.mohncke@rshw.de>";
+#$text = "
+#        <h1>Hallo Jim</h1><br>
+#        <h3>Jetzt neu blah blah blah</h3>
+#";
+
+#mail($empfaenger, $betreff, $text, $from);
+
+
+
+    
+include("PHPMailer-master/src/PHPMailer.php");
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+
+$bodytext = "neuer Besuchsbericht von Deiner Webseite\r\n";
+$bodytext .= "\r\n";
+$bodytext .= "
+    <h1>Hallo Jim</h1><br>
+    <h3>Jemand hat Deine Webseite besucht.!</h3><br>
+    <h3>IST DAS NICHT RICHTIG COOL!!!</h3>
+";
+
+echo "<pre>";
+$email = new PHPMailer();
+#var_dump($email);
+
+$email->CharSet = 'UTF-8';
+$email->isHTML(true);
+$email->SetFrom('jim.mohncke@rshw.de', 'Jim Mohncke');
+$email->Subject = 'neuer Besuchsbericht ';
+$email->Body = $bodytext;
+$email->AddAddress('jim.mohncke@rshw.de');
+
+
+
+
+$e = $email->Send();
+
+#echo "hallo".$e;
+
+
+    ?>
 
     <script>
 
