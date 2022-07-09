@@ -4,7 +4,7 @@
     <meta charset="UTF-8" http-equiv="refresh" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>Stundenplan9b</title>
-<<<<<<< HEAD
+
     <!-- <link rel="stylesheet" href="assets/style/header.css"> -->
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/header.css">
@@ -141,7 +141,6 @@
     </header>
 
 
-<<<<<<< HEAD
     <pre>
     <?php
     

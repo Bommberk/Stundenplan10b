@@ -1,0 +1,200 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.box
+{
+    width: 1300px;
+    height: 600px;
+    /* background-color: red; */
+    border-radius: 20px;
+    box-shadow: inset 0 0 15px black;
+    display: flex;
+    justify-content: center;
+}
+.box.active2
+{
+    background-color: red;
+}   
+li
+{
+    margin-left: 30px;
+    list-style: none;
+    font-size: 2.5em;
+    line-height: 120px;
+    margin-top: -40px;
+}
+li:nth-child(1)
+{
+    font-size: 3em;
+    margin-top: 0px;
+    line-height: 30px;
+    margin-top: 0;
+}
+.zeit li
+{
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-top: 0;
+}
+.zeit li:nth-child(1)
+{
+    letter-spacing: 0px;
+    font-weight: lighter;
+    line-height: 30px;
+    font-size: 3em;
+}
+
+.links
+{
+    display: flex;
+    justify-content: center;
+}
+.links a 
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 2.3em;
+    background: rgb(5, 44, 88);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+}
+.links a.active
+{
+    background: #ffffbb;
+    box-shadow: inset 0 0 5px black;
+    color: black;
+}
+.subkurs
+{
+    display: flex;
+    justify-content: center;
+}
+.subkurs h2
+{
+    font-size: 3em;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+.dropdown
+{
+    width: 130px;
+    height: 0px;
+    background-color: #238ef1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.dropdown a
+{
+    font-size: 1.7em;
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+}
+.dropdown.hiduei
+{
+    height: 160px;
+}
+
+
+a.icons
+{
+    color: black;
+}
+.haltstop
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-size: 10em;
+    color: white;
+    animation: 2s halt linear infinite;
+}
+@keyframes halt
+{
+    0%,100%
+    {
+        text-shadow: 0 0 20px white , 0 0 40px white, 0 0 60px white, 0 0 80px white;
+    }
+    50%
+    {
+        text-shadow: 0 0 50px white , 0 0 100px white, 0 0 150px white, 0 0 200px white;
+    }
+}
+
+
+
+.formular
+{
+    margin: 200px;
+}
+.formular input
+{
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+.formular input[type="submit"]
+{
+    background: #3fa310;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+.formular input[type="submit"]:hover
+{
+    box-shadow: 1px 1px 0px #2a5c14, 2px 2px 0 #2a5c14, 3px 3px 0 #244b13, 4px 4px 0 #244b13, 5px 5px 0 #18310d,
+                6px 6px 0 #18310d, 7px 7px 0 #13270a, 8px 8px 0 #13270a;
+}
+.head_update
+{
+    display: flex;
+    justify-content: center;
+}
+.login form
+{
+    margin: 50px;
+}
+.login input
+{
+    font-size: 1.4em;
+    width: 300px;
+}
+.rgb
+{
+    color: aqua;
+    animation: rgbfarbe 5s linear infinite;
+}
+@keyframes rgbfarbe
+{
+    0%,100%
+    {
+        filter: hue-rotate(0);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
