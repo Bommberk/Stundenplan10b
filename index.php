@@ -137,7 +137,7 @@
 
     ?>
     
-    <div class="container2">
+    <div style="margin-top: 50px;" class="container2">
         <div class="counter">
             <div class="day">
                 <h2 id="day">12</h2>
