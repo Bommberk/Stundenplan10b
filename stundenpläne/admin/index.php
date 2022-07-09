@@ -61,12 +61,8 @@ $data = $database->select("test_login", [
 
 $data = json_decode(json_encode($data));
 
-echo "<pre>";
-print_r($data);
-
 $zähler = count($data);
 
-echo $zähler;
 
 if($zähler == 1){
     header("location: ../?admin=aödlkfjowieuopoiHHÖLAKDFULKJAÖLKÖÖALDKFJöaldfLNEIOPz3987FHKBgabdfb");
