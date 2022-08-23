@@ -274,6 +274,9 @@ $database = new Medoo([
                                 if($hallo->was == "Deutsch Förder"){
                                     echo "<li style='color: red;'>".$hallo->was."<li>";
                                 }
+                                if($hallo->was == "Religion"){
+                                    echo "<li style='color: grey;'>".$hallo->was."<li>";
+                                }
                                 if($hallo->was == "Kunst"){
                                     echo "<li style='color: yellow;'>".$hallo->was."<li>";
                                 }
