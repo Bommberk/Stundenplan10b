@@ -12,7 +12,7 @@
 <body style="background: #5c85dd;font-family: 'Josefin Sans', sans-serif;">
     <h1>Es tut mir sehr leid Ihnen mitteilen zu müssen, dass<br>
         diese Webside jetzt durch große Probleme am Stundenplan geschlossen ist.<br>
-        Vielen Dank für Ihr Ferständniss.
+        Vielen Dank für Ihr Verständniss.
 </h1>
 </body>
 </html>
