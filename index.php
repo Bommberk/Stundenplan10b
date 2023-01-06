@@ -181,7 +181,6 @@
     ]);
 
     $data = $database->select("admin",[
-        "benutzername",
         "email",
         "password",
     ]);
