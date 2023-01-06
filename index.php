@@ -64,6 +64,8 @@ $database = new Medoo([
     ]
     ]);
 
+    echo "hallo";
+
 
 // $data = $database->select("logindaten", [
 //     "benutzername" => $_POST["benutzername"],
