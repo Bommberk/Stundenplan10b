@@ -62,21 +62,22 @@ $database = new Medoo([
     'command' => [
         'SET SQL_MODE=ANSI_QUOTES'
     ]
-]);
+    ]);
 
 
-$data = $database->select("logindaten", [
-    "benutzername" => $_POST["benutzername"],
-    "email" => $_POST["email"],
-    "password" => $_POST["password"],
-]);
+// $data = $database->select("logindaten", [
+//     "benutzername" => $_POST["benutzername"],
+//     "email" => $_POST["email"],
+//     "password" => $_POST["password"],
+// ]);
 
 
-$data = json_decode(json_encode($data));
+// $data = json_decode(json_encode($data));
 
-print_r($data);
+// print_r($data);
 
 echo "hallo";
+
 ?>
 
 </body>
