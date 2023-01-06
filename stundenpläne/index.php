@@ -230,7 +230,7 @@ $database = new Medoo([
 
         // $rot_class = "<p style='color: blue;'>".$rot_class."</p>";
 
-
+    echo "hallo was geht bei euch";
 
     ?>
 
