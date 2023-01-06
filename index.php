@@ -16,6 +16,8 @@
 </h1>
 
 <?php
+
+echo "hallo";
     
     include("studenpläne/Medoo.php");
 
