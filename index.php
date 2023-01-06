@@ -135,62 +135,62 @@
          $datum['rest_minuten'] = floor($difference / $min);
         $difference = $difference - $datum['rest_minuten'] * $min;
 
-        include("stundenpläne/Medoo.php");
+    //     include("stundenpläne/Medoo.php");
 
-        // Using Medoo namespace.
+    //     // Using Medoo namespace.
     
-    use Medoo\Medoo;
+    // use Medoo\Medoo;
      
-    $database = new Medoo([
-        // [required]
-        'type' => 'mysql',
-        'host' => 'localhost',
-        'database' => 's5418_ferienwohnung',
-        'username' => 's5418_ferienwohnung',
-        'password' => 'Hkc4~372v',
+    // $database = new Medoo([
+    //     // [required]
+    //     'type' => 'mysql',
+    //     'host' => 'localhost',
+    //     'database' => 's5418_ferienwohnung',
+    //     'username' => 's5418_ferienwohnung',
+    //     'password' => 'Hkc4~372v',
      
-        // [optional]
-        'charset' => 'utf8mb4',
-        'collation' => 'utf8mb4_general_ci',
-        'port' => 3306,
+    //     // [optional]
+    //     'charset' => 'utf8mb4',
+    //     'collation' => 'utf8mb4_general_ci',
+    //     'port' => 3306,
      
-        // [optional] The table prefix. All table names will be prefixed as PREFIX_table.
-        'prefix' => '',
+    //     // [optional] The table prefix. All table names will be prefixed as PREFIX_table.
+    //     'prefix' => '',
      
-        // [optional] To enable logging. It is disabled by default for better performance.
-        'logging' => true,
+    //     // [optional] To enable logging. It is disabled by default for better performance.
+    //     'logging' => true,
      
-        // [optional]
-        // Error mode
-        // Error handling strategies when the error is occurred.
-        // PDO::ERRMODE_SILENT (default) | PDO::ERRMODE_WARNING | PDO::ERRMODE_EXCEPTION
-        // Read more from https://www.php.net/manual/en/pdo.error-handling.php.
-        'error' => PDO::ERRMODE_SILENT,
+    //     // [optional]
+    //     // Error mode
+    //     // Error handling strategies when the error is occurred.
+    //     // PDO::ERRMODE_SILENT (default) | PDO::ERRMODE_WARNING | PDO::ERRMODE_EXCEPTION
+    //     // Read more from https://www.php.net/manual/en/pdo.error-handling.php.
+    //     'error' => PDO::ERRMODE_SILENT,
      
-        // [optional]
-        // The driver_option for connection.
-        // Read more from http://www.php.net/manual/en/pdo.setattribute.php.
-        'option' => [
-            PDO::ATTR_CASE => PDO::CASE_NATURAL
-        ],
+    //     // [optional]
+    //     // The driver_option for connection.
+    //     // Read more from http://www.php.net/manual/en/pdo.setattribute.php.
+    //     'option' => [
+    //         PDO::ATTR_CASE => PDO::CASE_NATURAL
+    //     ],
      
-        // [optional] Medoo will execute those commands after the database is connected.
-        'command' => [
-            'SET SQL_MODE=ANSI_QUOTES'
-        ]
-    ]);
+    //     // [optional] Medoo will execute those commands after the database is connected.
+    //     'command' => [
+    //         'SET SQL_MODE=ANSI_QUOTES'
+    //     ]
+    // ]);
 
-    $data = $database->select("logindaten",[
-        "email",
-        "password",
-    ]);
+    // $data = $database->select("logindaten",[
+    //     "email",
+    //     "password",
+    // ]);
 
-    $data = json_decode(json_encode($data));
+    // $data = json_decode(json_encode($data));
 
-    echo "<pre>";
+    // echo "<pre>";
 
-    print_r($data);
-    echo "</pre>";
+    // print_r($data);
+    // echo "</pre>";
 
     ?>
     
