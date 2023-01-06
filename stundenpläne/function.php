@@ -1,6 +1,7 @@
 <?php
 
     
+    
 require("Medoo.php");
 
 
@@ -200,7 +201,7 @@ $database = new Medoo([
         </span>";
         $size_box = "1410px";
 
-        echo "<a style='font-size:2em; color: black;' href='../stundenpläne'>Zrück zur Startseite</a>";
+        echo "<a style='font-size:2em; color: black;' href='/test_stundenplan'>Zrück zur Startseite</a>";
 
     }
 
