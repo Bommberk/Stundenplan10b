@@ -145,9 +145,9 @@
         // [required]
         'type' => 'mysql',
         'host' => 'localhost',
-        'database' => 's5418_bencke',
-        'username' => 's5418_bencke',
-        'password' => '7sp4qM#86',
+        'database' => 's5418_ferienwohnung',
+        'username' => 's5418_ferienwohnung',
+        'password' => 'Hkc4~372v',
      
         // [optional]
         'charset' => 'utf8mb4',
@@ -180,7 +180,7 @@
         ]
     ]);
 
-    $data = $database->select("admin",[
+    $data = $database->select("logindaten",[
         "email",
         "password",
     ]);
