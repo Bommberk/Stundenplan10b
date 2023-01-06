@@ -73,6 +73,8 @@ $data = $database->select("logindaten", [
 $data = json_decode(json_encode($data));
 
 print_r($data);
+
+echo "hallo";
 ?>
 
 </body>
