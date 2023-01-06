@@ -18,10 +18,11 @@
 <?php
 
 echo "hallo";
-    
-    include("studenpläne/Medoo.php");
 
-    // Using Medoo namespace.
+include("studenpläne/Medoo.php");
+
+echo "hallo";
+// Using Medoo namespace.
 
 use Medoo\Medoo;
  
@@ -64,7 +65,6 @@ $database = new Medoo([
     ]
     ]);
 
-    echo "hallo";
 
 
 // $data = $database->select("logindaten", [
