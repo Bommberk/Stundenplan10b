@@ -188,9 +188,10 @@
 
     $data = json_decode(json_encode($data));
 
-    echo "hallo";
+    echo "<pre>";
 
     print_r($data);
+    echo "</pre>";
 
     ?>
     
