@@ -120,6 +120,9 @@ elseif(isset($_GET["update"]) && $_GET["update"] == "true"){
 
             echo "<pre>";
 
+            
+        echo "<a style='font-size:2em; color: black;' href='../stundenpläne'>Zrück zur Startseite</a>";
+
             // var_dump($database);
 
 }
