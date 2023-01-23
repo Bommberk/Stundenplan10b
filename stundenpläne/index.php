@@ -146,6 +146,9 @@ $database = new Medoo([
                                 if($hallo->was == "Mathe" || $hallo->was == "Mathe Förder"){
                                     echo "<li style='color: green;'>".$hallo->was."<li>";
                                 }
+                                if($hallo->was == "Religion"){
+                                    echo "<li style='color: darkgray;'>".$hallo->was."<li>";
+                                }
                                 if($hallo->was == "Kunst"){
                                     echo "<li style='color: yellow;'>".$hallo->was."<li>";
                                 }
@@ -206,6 +209,9 @@ $database = new Medoo([
 
                                 if($hallo->was == "Deutsch"){
                                     echo "<li style='color: red;'>".$hallo->was."<li>";
+                                }
+                                if($hallo->was == "Religion"){
+                                    echo "<li style='color: darkgray;'>".$hallo->was."<li>";
                                 }
                                 if($hallo->was == "Erdkunde"){
                                     echo "<li style='color: brown;'>".$hallo->was."<li>";
@@ -275,6 +281,9 @@ $database = new Medoo([
                                 if($hallo->was == "Mathe" || $hallo->was == "Mathe Förder"){
                                     echo "<li style='color: green;'>".$hallo->was."<li>";
                                 }
+                                if($hallo->was == "Religion"){
+                                    echo "<li style='color: darkgray;'>".$hallo->was."<li>";
+                                }
                                 if($hallo->was == "Kunst"){
                                     echo "<li style='color: yellow;'>".$hallo->was."<li>";
                                 }
@@ -343,6 +352,9 @@ $database = new Medoo([
                                 if($hallo->was == "Informatik" || $hallo->was == "Sowi" || $hallo->was == "Französisch" || $hallo->was == "Biologie"){
                                     echo "<li style='color: grey;'>".$hallo->was."<li>";
                                 }
+                                if($hallo->was == "Religion"){
+                                    echo "<li style='color: darkgray;'>".$hallo->was."<li>";
+                                }
                                 if($hallo->was == "Chemie"){
                                     echo "<li style='color: #1bf5cd;'>".$hallo->was."<li>";
                                 }
@@ -391,6 +403,9 @@ $database = new Medoo([
 
                                 if($hallo->was == "Deutsch"){
                                     echo "<li style='color: red;'>".$hallo->was."<li>";
+                                }
+                                if($hallo->was == "Religion"){
+                                    echo "<li style='color: darkgray;'>".$hallo->was."<li>";
                                 }
                                 if($hallo->was == "Erdkunde"){
                                     echo "<li style='color: brown;'>".$hallo->was."<li>";
