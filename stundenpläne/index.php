@@ -133,7 +133,7 @@ $database = new Medoo([
                     
                     foreach($data as $hallo){
 
-                        if($hallo->tag == "1-Montag" && ($hallo->wer == "alle" || $hallo->wer == $kurs)){
+                        if($hallo->tag == "1-Montag" && ($hallo->wer == "alle" || $hallo->wer == $kurs || $hallo ->wer == $subkurs)){
 
                             
                             if($bearbeiten == "Ja, ist erlaubt!"){
@@ -195,7 +195,7 @@ $database = new Medoo([
                     
                     foreach($data as $hallo){
 
-                        if($hallo->tag == "2-Dienstag" && ($hallo->wer == "alle" || $hallo->wer == $kurs)){
+                        if($hallo->tag == "2-Dienstag" && ($hallo->wer == "alle" || $hallo->wer == $kurs || $hallo ->wer == $subkurs)){
                             
                             if($bearbeiten == "Ja, ist erlaubt!"){
                                 echo "<li>".$hallo->was. "<a class='icons' href='formular.php?eddit=true&id=".$hallo->id."&tag=".$hallo->tag."&stunde=".$hallo->stunde."&was=".$hallo->was."&wer=".$hallo->wer."'>" .$tollesIcon."</a><li>";
@@ -254,7 +254,7 @@ $database = new Medoo([
                     
                     foreach($data as $hallo){
 
-                        if($hallo->tag == "3-Mittwoch" && ($hallo->wer == "alle" || $hallo->wer == $kurs)){
+                        if($hallo->tag == "3-Mittwoch" && ($hallo->wer == "alle" || $hallo->wer == $kurs || $hallo ->wer == $subkurs)){
 
                             if($bearbeiten == "Ja, ist erlaubt!"){
                                 echo "<li>".$hallo->was."<a class='icons' href='formular.php?eddit=true&id=".$hallo->id."&tag=".$hallo->tag."&stunde=".$hallo->stunde."&was=".$hallo->was."&wer=".$hallo->wer."'>" .$tollesIcon."</a><li>";
@@ -372,7 +372,7 @@ $database = new Medoo([
                     
                     foreach($data as $hallo){
 
-                        if($hallo->tag == "5-Freitag" && ($hallo->wer == "alle" || $hallo->wer == $kurs)){
+                        if($hallo->tag == "5-Freitag" && ($hallo->wer == "alle" || $hallo->wer == $kurs || $hallo ->wer == $subkurs)){
                             if($bearbeiten == "Ja, ist erlaubt!"){
                                 echo "<li>".$hallo->was."<a class='icons' href='formular.php?eddit=true&id=".$hallo->id."&tag=".$hallo->tag."&stunde=".$hallo->stunde."&was=".$hallo->was."&wer=".$hallo->wer."'>" .$tollesIcon."</a><li>";
                             } else {
