@@ -13,9 +13,6 @@
         echo "hallo was geht bei dir!!!";
     
     require("Medoo.php");
-    
-    
-    
       
          
     // Using Medoo namespace.
@@ -25,9 +22,9 @@
         // [required]
         'type' => 'mysql',
         'host' => 'localhost',
-        'database' => 'stundenplan',
-        'username' => 'root',
-        'password' => '',
+        'database' => 's5418_stundenplan',
+        'username' => 's5418_stundenplan',
+        'password' => 'R1?0vxx06',
      
         // [optional]
         'charset' => 'utf8mb4',
