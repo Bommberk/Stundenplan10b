@@ -16,8 +16,8 @@ $database = new Medoo([
     // [required]
     'type' => 'mysql',
     'host' => 'localhost',
-    'database' => 's5164_stundenplan',
-    'username' => 's5164_stundenplan',
+    'database' => 's5418_stundenplan',
+    'username' => 's5418_stundenplan',
     'password' => 'R1?0vxx06',
  
     // [optional]
