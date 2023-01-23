@@ -133,7 +133,7 @@ $database = new Medoo([
                     
                     foreach($data as $hallo){
 
-                        if($hallo->tag == "1-Montag" && ($hallo->wer == "alle" || $hallo->wer == $kurs || $hallo ->wer == $subkurs)){
+                        if($hallo->tag == "1-Montag" && ($hallo->wer == "alle" || $hallo->wer == "sowi" || $hallo ->wer == $subkurs)){
 
                             
                             if($bearbeiten == "Ja, ist erlaubt!"){
