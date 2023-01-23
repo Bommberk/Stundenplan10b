@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Stundenpläne</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -214,29 +214,66 @@ $database = new Medoo([
         </span>";
         $size_box = "1410px";
 
-        echo "<a style='font-size:2em; color: black;' href='/test_stundenplan'>Zrück zur Startseite</a>";
+        echo "<a style='font-size:2em; color: black;' href='../stundenpläne'>Zrück zur Startseite</a>";
 
     }
 
-    $rot = "";
+    $data2 = $database->select("notizen", [
+        "notiz",
+        "fach",
+    ]);
 
-    foreach($data as $hallo){
+        
+        ?>
 
-        if($hallo->was == "Deutsch"){
+<div id="note-deutsch" class="notes">
+    <ol class="note_list">
+        <li>Hier ist Platz für notizen</li>
+        <li>asdf</li>
+        <li>asdf</li>
+        <li>asdf</li>
+    </ol>
+</div>
+<div id="note-info" class="notes">
+        <h2>Hier Notizen</h2>
+        <?php
+            foreach($data2 as $hallo_notes){
+                echo "<br>".$hallo_notes->notiz;
+            }
+        ?>
+</div>
 
-            $rot_class = $hallo->was;
-
-        }
-
+<style>
+    .notes
+    {
+        position: absolute;
+        height: 550px;
+        width: 450px;
+        background: #ffff8b;
+        left: calc(50% - 450px / 2);
+        top: 100px;
+        box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+        transform: scale(0);
     }
+    h2
+    {
+        font-size: 2em;
+    }
+    .note
+    {
+        transform: scale(1);
+        transition: 0.5s;
+    }
+</style>
 
-        // $rot_class = "<p style='color: blue;'>".$rot_class."</p>";
-
-
-
-    ?>
-
-
+<script>
+    function deutsch(){
+        document.getElementById("note-deutsch").classList.toggle("note");
+    }
+    function info(){
+        document.getElementById("note-info").classList.toggle("note");
+    }
+</script>
 
 
 <div class="container">
@@ -266,7 +303,7 @@ $database = new Medoo([
                             } else {
 
                                 if($hallo->was == "Deutsch"){
-                                    echo "<li style='color: red;'>".$hallo->was."<li>";
+                                    echo "<li onclick='deutsch()' style='color: red;'>".$hallo->was."<li>";
                                 }
                                 if($hallo->was == "Mathe" || $hallo->was == "Mathe Förder"){
                                     echo "<li style='color: green;'>".$hallo->was."<li>";
@@ -275,7 +312,7 @@ $database = new Medoo([
                                     echo "<li style='color: yellow;'>".$hallo->was."<li>";
                                 }
                                 if($hallo->was == "Informatik" || $hallo->was == "Sowi" || $hallo->was == "Französisch" || $hallo->was == "Biologie"){
-                                    echo "<li style='color: grey;'>".$hallo->was."<li>";
+                                    echo "<li onclick='info()' style='color: grey;'>".$hallo->was."<li>";
                                 }
                                 if($hallo->was == "Chemie"){
                                     echo "<li style='color: #1bf5cd;'>".$hallo->was."<li>";
@@ -550,6 +587,7 @@ $database = new Medoo([
         </ul>
     </div>
 </div>
+
 
 <div class="links">
 <a href="?page=info" class="<?=$info_button_class?>">Informatik</a>
